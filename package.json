@@ -1,8 +1,10 @@
 {
   "name": "celesio-fed-tools",
+  "version": "1.1.18",
   "description": "FED Runner",
   "main": "gulpfile.babel.js",
   "author": "Faizal Sahebdin",
+  "email": "iller7@gmail.com",
   "url": "local.dev",
   "magento": false,
   "websphere": true,
