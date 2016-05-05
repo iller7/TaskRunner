@@ -7,9 +7,9 @@ A quick startup guide for setting up your environment from a front-end perspecti
 > Platform agnostic. Tested on Linux and Windows.
 
 ### Version
-1.1.16
+1.1.18
 
-> This is a _working document_. Last edited by [Faizal Sahebdin] on 17 March 2016 
+> This is a _working document_. Last edited by [Faizal Sahebdin] on 05 May 2016 
 
 ## Tech
 The toolset uses a number of open source projects to work properly while utilising your editor of choice. For this configuration I shall be using [Sublime Text] as my editor but [Vim], [Visual Studio] and [Atom] have all got their equivalent plugins and settings
@@ -63,7 +63,7 @@ If you're using Sublime then you may switch off some of the tasks in the Gulp fi
 * [SublimeGitGutter] - optional, if you're using git and to see diff in gutter
 * [SublimeLinter] - optional, integrated linting engine. language specific plugins are installed separately
 * [SublimeLinter-contrib-sass-lint] - optional plugin for sass, using sass-lint
-  ```
+  * ```
   $ gem install scss-lint
   $ npm install -g sass-lint
   ```
@@ -93,7 +93,7 @@ $ npm install
 ```cmd
 $ cd [your_project_root]
 $ npm install gulp --save-dev
-$ npm install --save-dev babel-core babel-preset-es2015 browser-sync del eslint eslint-config-google gulp-autoprefixer gulp-babel gulp-beautify gulp-cached gulp-concat gulp-cssnano gulp-filter gulp-eslint gulp-htmlmin gulp-if gulp-imagemin gulp-jasmine gulp-less gulp-load-plugins gulp-newer gulp-notify gulp-plumber gulp-progeny gulp-rename run-sequence gulp-sass gulp-scss-lint gulp-size gulp-sourcemaps gulp-uglify gulp-useref gulp-uncss gulp-util pagespeed psi sw-precache sw-toolbox
+$ npm install --save-dev babel-core babel-preset-es2015 babel-register browser-sync del eslint eslint-config-google gulp-autoprefixer gulp-babel gulp-beautify gulp-cached gulp-clean-css gulp-concat gulp-filter gulp-eslint gulp-htmlmin gulp-if gulp-imagemin gulp-jasmine gulp-less gulp-load-plugins gulp-newer gulp-notify gulp-plumber gulp-progeny gulp-rename run-sequence gulp-sass gulp-scss-lint gulp-size gulp-sourcemaps gulp-uglify gulp-useref gulp-uncss gulp-util pagespeed psi sw-precache sw-toolbox
 ```
 
 * Note: There a bug on Windows 10 which complains about a missing C++ compiler, I got around this by googling and installing the SDK
@@ -132,7 +132,7 @@ lint | standalone linting for js and sass/scss
 build | standalone build deployment
 sync | standalone browser sync
 less | magento 2 specific less compiler
-watcheLess | magento 2 watcher for less file compilation
+watchLess | magento 2 watcher for less file compilation
 ***
 
 #### Keyboard bindings and shortcuts
@@ -156,7 +156,7 @@ esc | Hide build panel
 #### Configuration and settings files
 File | Description
 :--- | :---
-.editorconfig | editor independant configuration file
+.editorconfig | editor independent configuration file
 .gitignore | folders and files to be ignored by git
 .jshintrc | javascript linter settings, change the environment section to match yours
 gulpfile.babel.js | task runner
@@ -170,7 +170,7 @@ gulpfile.babel.js | task runner
 
 ### Todos
 
-* Unit Testing Automation, CucumberJs or Jasmine - [George Old]
+* Unit Testing Automation, CucumberJs or Jasmine
 * Test on a Mac, volunteer needed
 * .travis.yml build scripts for [IBM Websphere]
 * Control Apache and Database servers from Gulp
