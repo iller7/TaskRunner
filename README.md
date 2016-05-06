@@ -23,8 +23,8 @@ The toolset uses a number of open source projects to work properly while utilisi
 - [Gulp] - stream based build system
 - [Python] - optional, but may be required for some plugins
 - [.Net Framework 2 SDK] - optional, but may be required for some plugins
-- [VS Update 2013.4] - optional, windows needed for [BrowserSync]
-=======
+- [VS Update 2013.4] - optional, may be needed for [BrowserSync]
+***
 
 #### Troubleshooting
 - [.Net Framework 2 SDK] - optional, but may be required for some plugins
