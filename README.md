@@ -13,7 +13,6 @@ A quick startup guide for setting up your environment from a front-end perspecti
 
 ## Tech
 The toolset uses a number of open source projects to work properly while utilising your editor of choice. For this configuration I shall be using [Sublime Text] as my editor but [Vim], [Visual Studio] and [Atom] have all got their equivalent plugins and settings
-
 ***
 
 ### Libraries
@@ -63,14 +62,13 @@ If you're using Sublime then you may switch off some of the tasks in the Gulp fi
 * [SublimeGitGutter] - optional, if you're using git and to see diff in gutter
 * [SublimeLinter] - optional, integrated linting engine. language specific plugins are installed separately
 * [SublimeLinter-contrib-sass-lint] - optional plugin for sass, using sass-lint
-  * ```
+  ```
   $ gem install scss-lint
   $ npm install -g sass-lint
   ```
 * [SublimeLinter-jshint] - optional, [SublimeLinter] plugin for javascript, using jshint
-  * ```$ npm install -g jshint```
+  ```$ npm install -g jshint```
 * [SideBarEnhancements] - optional, enhancements to Sublime Text sidebar
-
 ***
 
 ## Task runner
@@ -150,7 +148,6 @@ ctrl+alt+b | Kill all gulp tasks
 ctrl+shift+t | Run arbitrary gulp task
 f12 | Show build panel
 esc | Hide build panel
-
 ***
 
 #### Configuration and settings files
@@ -165,7 +162,6 @@ gulpfile.babel.js | task runner
 ./dev/tools/sublime/user-settings/Default (Windows).sublime-keymap | windows shortcuts
 ./dev/tools/sublime/user-settings/Preferences.sublime-settings | user preferences and defaults for Sublime
 ./dev/tools/sublime/user-settings/SublimeLinter.sublime-settings | linter settings
-
 ***
 
 ### Todos
